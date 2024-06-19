@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import SearchForm from '../components/SearchForm';
-import SearchHistory from '../components/SearchHistory';
-import GeoInfo from '../components/GeoInfo';
+import SearchForm from '../component/SearchForm';
+import SearchHistory from '../component/SearchHistory';
+import GeoInfo from '../component/GeoInfo';
 
 const Home = () => {
 

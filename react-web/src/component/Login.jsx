@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate hook
+import { useNavigate } from 'react-router-dom'; 
 import '../App.css';
 
 const Login = () => {
   const [loginEmail, setLoginEmail] = useState('');
   const [loginPassword, setLoginPassword] = useState('');
   const [error, setError] = useState('');
-  const navigate = useNavigate(); // Access the navigate function from React Router
+  const navigate = useNavigate(); 
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -17,7 +17,7 @@ const Login = () => {
         loginPassword,
       });
       console.log('Login successful:', response.data.user);
-      // Redirect to dashboard page on successful login
+    
       navigate('/home');
     } catch (error) {
       console.error('Login error:', error.response?.data?.error || error.message);
